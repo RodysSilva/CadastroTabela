@@ -1,0 +1,20 @@
+Rodrigo Silva Nunes-RGM:30464820
+
+
+CREATE DATABASE ALUNO30464820;
+
+CREATE TABLE CADASTRO (
+    nome     VARCHAR(60) NOT NULL ,
+    email    VARCHAR(60) NOT NULL ,
+    telefone     CHAR(15) NOT NULL ,
+    dataAgendamento     DATE ,
+    horarioAgendamento  VARCHAR(5)  ,
+    dataNascimento      DATE ,
+    tipo     CHAR(1) ,
+    sexo     CHAR(1) ,
+    deonca    boolean    ,
+    carteirinha   VARCHAR(30) DEFAULT ""  ,
+    rg        VARCHAR(30) DEFAULT ""    ,
+    numeroCart       VARCHAR(100)      ,
+    situacaoMed     TEXT
+) ;

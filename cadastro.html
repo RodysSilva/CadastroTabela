@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title> Consultório Clínico </title>
+		<link rel="stylesheet">
+	</head>
+	
+	<body>
+			<h2>Formulário Consultório Clínico </h2>
+		<form method="post" action="gravarDados.php">
+			Nome do cliente :<input type="text" maxlength="40" name="nome"> <br>
+			e-mail : <input type="text" maxlength="35" name="email"> <br>
+			telefone : <input type="number" name="telefone"> <br>
+			Data do agendamento : <input type="date" name="dataAgendamento"> <br>
+			Horário do agendamento : <input type="time" name="horarioAgendamento"> <br>
+			Data de nascimento : <input type="date" name="dataNascimento"> <br>
+			Estado Civil  : <select name="tipo">
+							<option value="S">Solteiro</option>
+							<option value="C">Casado</option>
+							<option value="v">Viúvo</option>
+							</select><br>
+			<fieldset>
+			<legend>Sexo : </legend>
+			<br> Masculino:<input type="radio" name="sexo" value="M" checked> <br>
+						Feminino:<input type="radio" name="sexo" value="F"> <br>
+						Outros:<input type="radio" name="sexo" value="O"> <br>
+			</fieldset>
+			Tem doença crônica : <input type="checkbox" name="deonca"> <br>
+			Foto da carteirinha e RG : <input type="file" name="carteirinha"> <input type="file" name="rg"> <br>
+			Número da carteirinha : <input type="number" name="numeroCart"> <br>
+			Descrição da situação médica atual : <input type="text" name="situacaoMed"> <br>
+			<input type="submit" value="cadastrar">
+			<input type="reset" value="limpar campos" >
+		</form>
+	</body>
+</html>
